@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Axeron Nexus</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+
+<div class="app">
+
+
+<header>
+
+<div>
+<h1>AXERON NEXUS</h1>
+<p>Gaming Performance Center</p>
+</div>
+
+<div class="status">
+ONLINE
+</div>
+
+</header>
+
+
+
+<section class="monitor grid">
+
+
+<div class="card">
+<span>CPU</span>
+<h2 id="cpu">42%</h2>
+<div class="bar">
+<div id="cpuBar"></div>
+</div>
+</div>
+
+
+
+<div class="card">
+<span>GPU</span>
+<h2 id="gpu">67%</h2>
+
+<div class="bar">
+<div id="gpuBar"></div>
+</div>
+
+</div>
+
+
+
+<div class="card">
+<span>TEMP</span>
+<h2 id="temp">39°C</h2>
+</div>
+
+
+
+<div class="card">
+<span>BATTERY</span>
+<h2 id="battery">82%</h2>
+</div>
+
+
+</section>
+
+
+
+
+<section class="panel">
+
+<h3>Performance Profile</h3>
+
+
+<div class="buttons">
+
+<button class="active">
+Balanced
+</button>
+
+
+<button>
+Performance
+</button>
+
+
+<button>
+Battery Saver
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="panel">
+
+<h3>Rendering Engine</h3>
+
+
+<div class="buttons">
+
+
+<button>
+Skia VK
+</button>
+
+
+<button>
+Skia GL
+</button>
+
+
+<button>
+OpenGL
+</button>
+
+
+<button>
+Vulkan
+</button>
+
+
+<button>
+Threaded
+</button>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section class="panel">
+
+
+<h3>Resolution Manager</h3>
+
+
+<div class="resolution">
+
+
+<div>
+<p>Current</p>
+<strong id="currentRes">
+1080p
+</strong>
+</div>
+
+
+
+<div>
+<p>Preset</p>
+
+<select>
+
+<option>
+Native
+</option>
+
+
+<option>
+900p Balanced
+</option>
+
+
+<option>
+720p Performance
+</option>
+
+
+</select>
+
+</div>
+
+
+</div>
+
+
+
+<button class="apply">
+Apply Resolution
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="panel">
+
+
+<h3>Refresh Lock</h3>
+
+
+<div class="refresh">
+
+
+<button>
+60Hz
+</button>
+
+
+<button>
+90Hz
+</button>
+
+
+<button>
+120Hz
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="panel preload">
+
+
+<h3>Game Preload</h3>
+
+
+<p>
+Optimize memory and prepare selected game
+</p>
+
+
+<button class="apply">
+Select Game
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+Axeron Nexus v1.0
+
+</footer>
+
+
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

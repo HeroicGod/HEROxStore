@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>
+Axeron Nexus
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+AXERON
+<br>
+<span>NEXUS</span>
+
+</div>
+
+
+<nav>
+
+
+<button class="nav active" data-page="dashboard">
+⌂ Dashboard
+</button>
+
+
+<button class="nav" data-page="monitor">
+◉ Monitor
+</button>
+
+
+<button class="nav" data-page="display">
+▣ Display
+</button>
+
+
+<button class="nav" data-page="booster">
+⚡ Booster
+</button>
+
+
+<button class="nav" data-page="settings">
+⚙ Settings
+</button>
+
+
+</nav>
+
+
+</aside>
+
+
+
+
+
+<!-- CONTENT -->
+
+<main class="content">
+
+
+
+<section id="dashboard" class="page active">
+
+
+<h1>
+Gaming Dashboard
+</h1>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<p>CPU</p>
+
+<h2 id="cpu">
+--%
+</h2>
+
+</div>
+
+
+
+
+<div class="card">
+
+<p>GPU</p>
+
+<h2 id="gpu">
+--%
+</h2>
+
+</div>
+
+
+
+
+<div class="card">
+
+<p>Temperature</p>
+
+<h2 id="temp">
+--°C
+</h2>
+
+</div>
+
+
+
+
+<div class="card">
+
+<p>Battery</p>
+
+<h2 id="battery">
+--%
+</h2>
+
+</div>
+
+
+
+</div>
+
+
+<canvas id="performanceGraph"></canvas>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="monitor" class="page">
+
+
+<h1>
+Device Monitor
+</h1>
+
+
+<div class="panel">
+
+
+<div class="row">
+
+<span>
+RAM
+</span>
+
+<strong id="ram">
+--
+</strong>
+
+</div>
+
+
+
+<div class="row">
+
+<span>
+Thermal Sensor
+</span>
+
+<strong id="thermal">
+Checking...
+</strong>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="display" class="page">
+
+
+<h1>
+Display Control
+</h1>
+
+
+<div class="panel">
+
+
+<h3>
+Refresh Rate
+</h3>
+
+
+<div id="refreshList"
+class="buttons">
+
+</div>
+
+
+
+
+<h3>
+Resolution
+</h3>
+
+
+<select id="resolution">
+
+
+<option value="native">
+Native
+</option>
+
+
+<option value="900">
+900p Performance
+</option>
+
+
+<option value="720">
+720p Ultra Performance
+</option>
+
+
+</select>
+
+
+
+<button id="applyResolution">
+Apply
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="booster" class="page">
+
+
+<h1>
+Game Booster
+</h1>
+
+
+
+<div class="panel">
+
+
+<h3>
+Performance Profile
+</h3>
+
+
+<div class="buttons">
+
+
+<button data-profile="Balanced">
+Balanced
+</button>
+
+
+<button data-profile="Performance">
+Performance
+</button>
+
+
+<button data-profile="Battery Saver">
+Battery Saver
+</button>
+
+
+</div>
+
+
+
+
+<h3>
+Game Preload
+</h3>
+
+
+<button id="preload">
+
+Optimize Game
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="settings" class="page">
+
+
+<h1>
+Device Capability
+</h1>
+
+
+<div class="panel">
+
+
+<div id="capability">
+
+Scanning...
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+<script src="graph.js"></script>
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
